@@ -1,0 +1,19 @@
+{
+  "name": "oct8",
+  "version": "1.0.0",
+  "description": "React Project Template with Automated Build",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0352391/react1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n0352391/react1/issues"
+  },
+  "homepage": "https://github.com/n0352391/react1#readme"
+}
