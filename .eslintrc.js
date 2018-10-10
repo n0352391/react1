@@ -3,14 +3,15 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
             "jsx": true
         },
-        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "plugins": [
@@ -18,23 +19,26 @@ module.exports = {
     ],
     "rules": {
         "indent": [
-            "warn",
-            "tab"
+            "warn"
         ],
         "linebreak-style": [
             "warn",
-            "windows"
+            "unix"
         ],
         "quotes": [
             "warn",
-            "double"
+            "single"
         ],
         "semi": [
-            "warn",
+            "error",
             "always"
         ],
-        "no-console":[
+        "no-console": [
             "warn"
-        ]
+        ],
+        "react/jsx-uses-react": 1, 
+        "react/jsx-uses-vars": 1, 
+        "react/react-in-jsx-scope": 1
+
     }
 };
