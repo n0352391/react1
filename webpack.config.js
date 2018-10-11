@@ -1,5 +1,6 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -20,13 +21,17 @@ module.exports = {
         }]
     },
 
-    plugins: [ 
+    plugins: [
         new CleanWebpackPlugin('dist'),
-        new HTMLWebpackPlugin({ 
-            filename: 'index.html', 
-            title: 'Welcome to my page!', 
-            mainDiv: 'welcome-message', 
-            template: 'src/index.html' 
-        })
+        new HTMLWebpackPlugin({
+            filename: 'index.html',
+            title: 'Welcome to my page!',
+            mainDiv: 'welcome-message',
+            template: 'src/index.html'
+        }),
+        new CopyWebpackPlugin([
+            { from: 'src/data',
+                to: 'data/'}
+        ])
     ]
 };

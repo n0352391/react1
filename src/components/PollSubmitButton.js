@@ -1,10 +1,11 @@
 import React from 'react';
 
 class PollSubmitButton extends React.Component{
-    render(){
+    render() {
         return (
-            <button className="btn btn-success">Go!</button>
+            <button onClick={this.props.handleClick} className="btn btn-success">Go!</button>
         );
     }
 }
+
 export default PollSubmitButton;

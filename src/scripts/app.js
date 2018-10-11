@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PollContainer from '../containers/PollContainer';
+import {BrowserRouter} from 'react-router-dom';
 
-ReactDOM.render(
-    <PollContainer />,
+import App from '../containers/App';
+
+
+ReactDOM.render((
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>),
     document.getElementById('app')
 );

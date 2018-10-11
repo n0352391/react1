@@ -4,7 +4,8 @@ module.exports = {
         "commonjs": true,
         "es6": true,
         "node": true,
-        "jasmine": true
+        "jasmine": true,
+        "jest": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -36,8 +37,8 @@ module.exports = {
         "no-console": [
             "warn"
         ],
-        "react/jsx-uses-react": 1, 
-        "react/jsx-uses-vars": 1, 
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1,
         "react/react-in-jsx-scope": 1
 
     }
